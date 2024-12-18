@@ -1,0 +1,3 @@
+.\myenv\Scripts\Activate ( if it works okay or else skip ).
+pip install -r requirements.txt
+flask --app app --debug run

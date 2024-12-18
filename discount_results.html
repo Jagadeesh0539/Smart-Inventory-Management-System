@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discount Prediction Results</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- <div class="container"> -->
+      <h1>Discount Prediction Results</h1>
+      <div>{% for table in tables %} {{ table | safe }} {% endfor %}</div>
+      <center><a href="{{ url_for('download_summary') }}" class="btn btn-primary">Download Summary File</a></center>
+
+      <center><button style="margin-bottom: 20px;" class="btn btn-warning mt-3" onclick="sendAlert()">Send Results to Email</button></center>
+      <script>
+        function sendAlert() {
+            fetch('/send_email')
+                .then(response => response.json())
+                .then(data => alert(data.message))
+                .catch(error => alert(error.message));
+        }
+    </script>
+    <!-- </div>   -->
+  </body>
+</html>

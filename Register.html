@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+  </head>
+  <body>
+    <div class="loginContainer">
+      <div class="card">
+        <div class="leftContainer">
+          <h1>Hello there!</h1>
+          <p>
+            Welcome !! You are here for the first time create Your account and
+            then get into the website.
+          </p>
+          <span>Already have a account?</span>
+          <a href="/login"><button>Login</button></a>
+        </div>
+        <div class="rigthContainer">
+          <h1>Register</h1>
+          <form
+            form
+            action="{{ url_for('register') }}"
+            method="POST"
+            class="FormContiner"
+          >
+            <input type="email" name="username" placeholder="Enter Your Name" />
+            <input
+              type="password"
+              name="password"
+              placeholder="Enter Your password"
+            />
+            <button type="submit">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

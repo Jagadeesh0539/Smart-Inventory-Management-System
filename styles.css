@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+  
+}
+.loginContainer {
+  font-family: "Times New Roman", Times, serif;
+  min-height: 100vh;
+  width: 100vw;
+  /* background-image:  url("bg1.png"); */
+  background-color: #c1beff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loginContainer .LogoImage {
+  height: 50px;
+  width: 150px;
+}
+.loginContainer .card {
+  /* background-color: #c1beff; */
+  width: 50%;
+  border: black;
+  display: flex;
+  flex-direction: row;
+  min-height: 600px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media (max-width: 600px) {
+  .loginContainer .card {
+    height: 80%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.loginContainer .card .leftContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: linear-gradient(#270b60, #270b60);
+  /* background-image:  url("bg.png"); */
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 50px;
+  gap: 30px;
+  color: white;
+}
+.loginContainer .card .leftContainer h1 {
+  font-size: 80px;
+  line-height: 80px;
+}
+.loginContainer .card .leftContainer p {
+  padding: 0px;
+  margin: 0px;
+}
+.loginContainer .card .leftContainer a {
+  text-decoration: none;
+  font-size: 15px;
+}
+.loginContainer .card .leftContainer button {
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+  color: redeccapurple;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+@media (max-width: 600px) {
+  .loginContainer .card .leftContainer {
+    border-radius: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
+.loginContainer .card .rigthContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 50px;
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  gap: 30px;
+  justify-content: center;
+}
+.loginContainer .card .rigthContainer h1 {
+  color: #555;
+  align-self: center;
+}
+.loginContainer .card .rigthContainer .FormContiner {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.loginContainer .card .rigthContainer .FormContiner input {
+  padding: 20px 10px;
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+.loginContainer .card .rigthContainer .FormContiner button {
+  width: 50%;
+  padding: 10px;
+  color: white;
+  background-color: #938eef;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  align-self: center;
+}
+@media (max-width: 600px) {
+  .loginContainer .card .rigthContainer {
+    border-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
